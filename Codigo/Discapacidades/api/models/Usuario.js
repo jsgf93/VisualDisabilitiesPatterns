@@ -23,6 +23,10 @@ module.exports = {
       type: 'string',
       required: true
     },
+    contrasenaUsuario: {
+      type: 'string',
+      required: true
+    },
     idCurso: {
         collection: "Curso"
     }
