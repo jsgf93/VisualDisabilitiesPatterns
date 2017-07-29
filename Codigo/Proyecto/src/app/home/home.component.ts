@@ -3,7 +3,7 @@ import {Http, Response} from "@angular/http";
 import {MasterUrlService} from "../services/master-url.service";
 import {NgForm} from "@angular/forms";
 
-
+import {AuthService} from "../services/auth.service";
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -16,8 +16,10 @@ export class HomeComponent implements OnInit {
   disabledButtons = {
     NuevoDeporteFormSubmitButton: false
   };
+  constructor(private authService:AuthService){
 
-  constructor() { }
+  }
+
 
   ngOnInit() {
   }
