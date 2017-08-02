@@ -1,7 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {AUTH_PROVIDERS} from "angular2-jwt";
-import {AuthService} from './services/auth.service';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RegistroComponent } from './registro/registro.component';
@@ -24,7 +22,7 @@ import {MasterUrlService} from "./services/master-url.service";
     HttpModule,
     routing
   ],
-  providers: [MasterUrlService,AUTH_PROVIDERS,AuthService],
+  providers: [MasterUrlService],
   bootstrap: [AppComponent],
 
 })
